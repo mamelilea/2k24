@@ -34,8 +34,9 @@ function App() {
           />
         </span>
         <div className='z-50 text-white font-bold text-2xl '>
-          <Countdown date={Date.now() + timeLeft()} onComplete={() => setNewYearMessage(["Selamat","tahun baru", "2k24", "Winayaa❤️"])}/>
+          <Countdown date={Date.now() + timeLeft()} onComplete={() => setNewYearMessage(["Selamat","tahun baru", "2k24"])}/>
         </div>
+        <audio className='opacity-5' controls autoPlay loop src="../src/assets/audio/1.mp3"></audio>
       </div>
     </>
   )
